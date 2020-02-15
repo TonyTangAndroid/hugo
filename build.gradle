@@ -9,11 +9,13 @@ buildscript {
     classpath 'org.gradle.api.plugins:gradle-nexus-plugin:0.7'
     classpath 'com.android.tools.build:gradle:3.5.3'
     classpath 'org.aspectj:aspectjtools:1.9.5'
+    classpath 'com.jakewharton.hugo:hugo-plugin:1.2.1'
   }
 }
 
 allprojects {
   repositories {
+    jcenter()
     mavenCentral()
     google()
   }
